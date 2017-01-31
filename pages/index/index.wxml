@@ -1,0 +1,19 @@
+<view class="container">
+<!--头部内容-->
+  <!--<view class="section music_title">
+    <text>wx-music</text>
+  </view>-->
+  <!--搜索-->
+  <view class="section music_search">
+    <input class="music_name" placeholder="请输入歌曲名称" bindinput="bindMusicNameInput" type="text" bindconfirm="searchMusic"/>
+    <button type="primary" bindtap="searchMusic">搜索</button>
+  </view>
+<!--音乐图片展示-->
+  <view class="section music_img">
+    <image src="{{picUrl}}" style="{{transform}}" bindtap="toggleRotate"></image>
+  </view>
+  <!--音乐信息-->
+  <view class="section music_audio">
+    <audio src="{{musicUrl}}" poster="{{picUrl}}" author="{{author}}" name="{{name}}" id="myAudio" bindplay="playMusic" bindpause="pauseMusic" controls></audio>
+  </view>
+</view>
